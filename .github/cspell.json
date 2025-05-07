@@ -1,0 +1,42 @@
+{
+    "version": "0.2",
+    "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
+    "dictionaries": ["facshus_allowed", "facshus_forbidden"],
+    "dictionaryDefinitions": [
+      {
+        "name": "facshus_allowed",
+        "path": "https://raw.githubusercontent.com/fa-c-shus/git-workflows/dictionaries/allowed.txt",
+        "description": "Allowed Spellings"
+      },
+      {
+        "name": "facshus_forbidden",
+        "path": "https://raw.githubusercontent.com/fa-c-shus/git-workflows/dictionaries/forbidden.txt",
+        "description": "Forbidden Spellings"
+      }
+    ],
+    "useGitignore": true,
+    "words": [
+      "amannn",
+      "APPDATA",
+      "brickhub",
+      "creatordate",
+      "creds",
+      "clsx",
+      "Csvg",
+      "Contador",
+      "endtemplate",
+      "Infima",
+      "linecap",
+      "localizable",
+      "mostrado",
+      "noopener",
+      "página",
+      "peaceiris",
+      "srealmoreno",
+      "retag",
+      "Texto",
+      "typecheck",
+      "webfactory",
+      "xlink"
+    ]
+  }
