@@ -18,4 +18,14 @@ if [[ "$new_version" == "" ]]; then
   exit 1
 fi
 
-git tag -d v1 && git tag v1 v$new_version && git push origin --delete v1 && git push origin v1
+# git tag -d v1 && git tag v1 v$new_version && git push origin --delete v1 && git push origin v1
+
+# Delete v1 tag if it exists
+if git rev-parse v1 >/dev/null 2>&1; then
+    git tag -d v1
+    git push origin --delete v1
+fi
+
+# Create new v1 tag
+git tag v1 v$new_version
+git push origin v1
