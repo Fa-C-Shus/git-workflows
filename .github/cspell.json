@@ -5,12 +5,12 @@
     "dictionaryDefinitions": [
       {
         "name": "facshus_allowed",
-        "path": "https://raw.githubusercontent.com/fa-c-shus/git-workflows/dictionaries/allowed.txt",
+        "path": "https://raw.githubusercontent.com/Fa-C-Shus/git-workflows/refs/heads/main/dictionaries/allowed.txt",
         "description": "Allowed Spellings"
       },
       {
         "name": "facshus_forbidden",
-        "path": "https://raw.githubusercontent.com/fa-c-shus/git-workflows/dictionaries/forbidden.txt",
+        "path": "https://raw.githubusercontent.com/Fa-C-Shus/git-workflows/refs/heads/main/dictionaries/forbidden.txt",
         "description": "Forbidden Spellings"
       }
     ],
