@@ -38,7 +38,7 @@ jobs:
 
     steps:
       - name: 📚 Git Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: 🪄 Spell Check
         uses: streetsidesoftware/cspell-action@v6
