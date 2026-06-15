@@ -47,7 +47,6 @@ jobs:
         run: dart pub get
 
       - name: 🔐 Setup Pub Credentials
-        if: ${{ secrets.pub_credentials != '' }}
         run: |
           mkdir -p $XDG_CONFIG_HOME/dart
           echo '${{secrets.pub_credentials}}' > "$XDG_CONFIG_HOME/dart/pub-credentials.json"

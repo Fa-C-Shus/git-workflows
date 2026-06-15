@@ -52,17 +52,10 @@ jobs:
       - name: 📦 Install Dependencies
         run: flutter pub get
 
-      - name: 🔐 Setup Pub Credentials\
-        if: ${{ secrets.pub_credentials != '' }}
+      - name: 🔐 Setup Pub Credentials
         run: |
           mkdir -p $XDG_CONFIG_HOME/dart
           echo '${{secrets.pub_credentials}}' > "$XDG_CONFIG_HOME/dart/pub-credentials.json"
-
-      - name: 🎯 Setup Dart
-        if: ${{ secrets.pub_credentials == '' }}
-        uses: dart-lang/setup-dart@v1
-        with:
-          sdk: ${{inputs.dart_sdk}}
 
       - name: 🌵 Dry Run
         run: flutter pub publish --dry-run
