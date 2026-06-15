@@ -1,6 +1,9 @@
 {
     "version": "0.2",
     "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
+    "ignorePaths": [
+      "../dictionaries/**"
+    ],
     "dictionaries": ["facshus_allowed", "facshus_forbidden"],
     "dictionaryDefinitions": [
       {
