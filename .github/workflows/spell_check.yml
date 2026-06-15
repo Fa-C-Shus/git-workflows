@@ -38,10 +38,10 @@ jobs:
 
     steps:
       - name: 📚 Git Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: 🪄 Spell Check
-        uses: streetsidesoftware/cspell-action@v6
+        uses: streetsidesoftware/cspell-action@v8
         with:
           config: ${{inputs.config}}
           files: ${{inputs.includes}}
